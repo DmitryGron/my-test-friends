@@ -1,0 +1,38 @@
+{
+    "globals": {
+      "window": true,
+      "$": true,
+      "use": true,
+      "granite": true
+    },
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jest": true
+    },
+    "root": true,
+    "rules": {
+      "quotes": [ 1, "single" ],
+      "comma-dangle": ["error", {
+          "functions": "never"
+      }],
+      "no-bitwise": ["error", {
+        "allow": ["~"]
+      }],
+      "no-plusplus": ["error", {
+        "allowForLoopAfterthoughts": true
+      }],
+      "import/no-extraneous-dependencies": ["error", {
+        "devDependencies": [
+          "**/*.test.js?",
+          "webpack/*"
+        ]
+      }],
+      "indent": ["error", 2],
+      "react/prop-types": 0,
+      "arrow-body-style": 0,
+      "linebreak-style": 0,
+      "max-len": 0
+    }
+  }
+  

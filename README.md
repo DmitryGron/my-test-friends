@@ -6,13 +6,12 @@
 
 ---
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-# A test project for intellyo.
-Made based the essential-react library.
+# The app is running here
+https://my-test-friends.firebaseapp.com
 
 
-# Changelog and how I worked
+## Changelog and how I worked
 
 First I went to c9.io to create a node server for the rest endpoint.
 I created a node.js workspace there and I used the json-server library for creating the mock json.
@@ -37,6 +36,7 @@ So the c9 should not be used anymore, all is in one place.
 (15)
 
 
+## Original readme
 
 - [Design Goals](#design-goals)
 - [Getting Started](#getting-started)
