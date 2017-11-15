@@ -21,7 +21,7 @@ export default class UsersPage extends React.Component {
 
   render() {
     const userList = this.state.users && this.state.users.map((user) => {
-      return <li><Link to={`user/${user.id}`}>{user.name}</Link></li>
+      return user && <li key={user.id}><Link to={`user/${user.id}`}>{user.name}</Link></li>
     })
     return (
       <div className={styles.content}>

@@ -1,7 +1,7 @@
 {
-  "name": "essential-react",
+  "name": "my-test-friends",
   "version": "0.5.0",
-  "description": "A minimal skeleton for building testable React apps using Babel",
+  "description": "A react test app",
   "main": "src/main.js",
   "scripts": {
     "postinstall": "npm run build",
@@ -16,17 +16,14 @@
     "url": "https://github.com/pheuter/essential-react.git"
   },
   "keywords": [
-    "skeleton",
-    "template",
-    "react",
-    "quickstart"
+    "react"
   ],
-  "author": "Mark Fayngersh",
+  "author": "Gergely Gazda",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pheuter/essential-react/issues"
+    "url": "https://github.com/gazdagergo/my-test-friends/issues"
   },
-  "homepage": "https://github.com/pheuter/essential-react",
+  "homepage": "https://github.com/gazdagergo/my-test-friends",
   "devDependencies": {
     "autoprefixer": "^6.0.2",
     "ava": "^0.12.0",

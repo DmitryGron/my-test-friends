@@ -1,12 +1,4 @@
 
-[![Travis branch](https://img.shields.io/travis/pheuter/essential-react.svg?style=flat-square)](https://travis-ci.org/pheuter/essential-react)
-[![Coveralls](https://img.shields.io/coveralls/pheuter/essential-react.svg?style=flat-square)](https://coveralls.io/r/pheuter/essential-react)
-[![David](https://img.shields.io/david/pheuter/essential-react.svg?style=flat-square)](https://david-dm.org/pheuter/essential-react)
-[![npm](https://img.shields.io/npm/v/essential-react.svg?style=flat-square)](https://www.npmjs.com/package/essential-react)
-
----
-
-
 # The app is running here
 https://my-test-friends.firebaseapp.com
 
@@ -34,6 +26,10 @@ I also set up the real time database with the user on firebase so it is now avai
 https://my-test-friends.firebaseio.com/users.json
 So the c9 should not be used anymore, all is in one place.
 (15)
+
+Routing has been implemented + user page fetches name. Eslint installed.
+Users page and user page firs draft ready.
+(1:30)
 
 
 ## Original readme
