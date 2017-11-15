@@ -11,6 +11,33 @@
 # A test project for intellyo.
 Made based the essential-react library.
 
+
+# Changelog and how I worked
+
+First I went to c9.io to create a node server for the rest endpoint.
+I created a node.js workspace there and I used the json-server library for creating the mock json.
+Copy-pasting the json from the project the
+https://list-the-guys-gazdagergo.c9users.io/reactUsers
+started working.
+(18 minutes)
+
+To find a good starter with pre-configured webpack and test libraries I visited the
+https://www.andrewhfarmer.com/starter-project/
+filterted on router and test and excluded redux
+It seemed that https://github.com/pheuter/essential-react will be a good choice, so I forked it.
+(9)
+
+I set up a firebase hosting and continouos integratin with travis ci, so my app is available via web and re-deployed automatically on push here:
+https://my-test-friends.firebaseapp.com
+(35)
+
+I also set up the real time database with the user on firebase so it is now available via rest here:
+https://my-test-friends.firebaseio.com/users.json
+So the c9 should not be used anymore, all is in one place.
+(15)
+
+
+
 - [Design Goals](#design-goals)
 - [Getting Started](#getting-started)
 - [Commands](#commands)
