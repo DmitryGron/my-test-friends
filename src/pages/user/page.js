@@ -1,24 +1,37 @@
 import React from "react";
-import styles from "./style.css";
+import userApi from "../../services/userApi";
+import { Link } from 'react-router';
 
 export default class UserPage extends React.Component {
   componentDidMount(){
-    fetch(`https://my-test-friends.firebaseio.com/users/${this.props.params.id}.json`)
+    userApi.getUsers(this.props.params.id)
     .then(results => (results.json()))
     .then(data => {
       this.setState({ user: data })
     })
   }
 
-
   render() {
     if (!this.state || !this.state.user) {
       return null;
     }
+    const user = this.state.user;
     return (
-      <div className={styles.content}>
-        <h1>{this.state.user.name}</h1>
-        <p className={styles.welcomeText}>This is user</p>
+      <div className="container user-container">
+        <header>
+          <div className="back"><Link to={`/`}>Back to users</Link></div>
+        </header>
+        <main>
+          <div className="row">
+            <div className="left col-lg-4">
+              <div className="photo-left">
+                <img className="photo" src={user.avatar} />
+              </div>
+              <h4 className="name">{user.name}</h4>
+              <p className="desc">{user.description}</p>
+            </div>
+          </div>
+        </main>
       </div>
     );
   }

@@ -1,6 +1,5 @@
 import React from 'react';
-import { browserHistory, Link } from 'react-router';
-import styles from './style.css';
+import UserListItem from './userListItem';
 
 
 export default class UsersPage extends React.Component {
@@ -21,14 +20,21 @@ export default class UsersPage extends React.Component {
 
   render() {
     const userList = this.state.users && this.state.users.map((user) => {
-      return user && <li key={user.id}><Link to={`user/${user.id}`}>{user.name}</Link></li>
+      return user && <UserListItem user={user} key={user.id} />
     })
+
     return (
-      <div className={styles.content}>
-        <h1 className={styles.heading}>Users</h1>
-        <ul role="nav">
-          { userList }
-        </ul>
+      <div className="users-page">
+        <header className="users-header">
+          <div className="container">
+            <h1>My Test Friends</h1>
+          </div>
+        </header>
+        <article className="user-cards">
+          <div className="container">
+            { userList }
+          </div>
+        </article>
       </div>
     );
   }

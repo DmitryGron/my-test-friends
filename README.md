@@ -5,13 +5,6 @@ https://my-test-friends.firebaseapp.com
 
 ## Changelog and how I worked
 
-First I went to c9.io to create a node server for the rest endpoint.
-I created a node.js workspace there and I used the json-server library for creating the mock json.
-Copy-pasting the json from the project the
-https://list-the-guys-gazdagergo.c9users.io/reactUsers
-started working.
-(18 minutes)
-
 To find a good starter with pre-configured webpack and test libraries I visited the
 https://www.andrewhfarmer.com/starter-project/
 filterted on router and test and excluded redux
@@ -30,6 +23,9 @@ So the c9 should not be used anymore, all is in one place.
 Routing has been implemented + user page fetches name. Eslint installed.
 Users page and user page firs draft ready.
 (1:30)
+
+https://tech.just-eat.com/2016/11/10/unit-testing-front-end-javascript-with-ava-and-jsdom/
+
 
 
 ## Original readme
