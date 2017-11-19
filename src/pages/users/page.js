@@ -1,5 +1,6 @@
 import React from 'react';
 import UserListItem from './userListItem';
+import userApi from "../../services/userApi";
 
 
 export default class UsersPage extends React.Component {
@@ -11,7 +12,7 @@ export default class UsersPage extends React.Component {
   }
 
   componentDidMount(){
-    fetch("https://my-test-friends.firebaseio.com/users.json")
+    userApi.getUsers()
     .then(results => (results.json()))
     .then(data => {
       this.setState({ users: data })
