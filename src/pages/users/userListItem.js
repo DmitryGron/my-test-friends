@@ -6,7 +6,9 @@ const UserListItem = (props) => (
     <Link
       to={`user/${props.user.id}`}>
       <div className="user-card">
-        <img src={props.user.avatar} className="user-card-avatar" />
+        <div className="user-avatar-wrap">
+          <img src={props.user.avatar} className="user-card-avatar" />
+        </div>
         <div className="user-card-name">{props.user.name}</div>
       </div>
     </Link>
