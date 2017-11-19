@@ -18,7 +18,7 @@ test('render with .uers-page div', t => {
   t.is(wrapper.find("div.users-page").length, 1);
 });
 
-test('render with .uers-page div', t => {
+test('UserListItem is rendered if users state not nul', t => {
   const wrapper = shallow(React.createElement(UsersPage));
   t.is(wrapper.find(UserListItem).length, 0);
   wrapper.setState({users: [{ id: 1, name: "foo" }]})

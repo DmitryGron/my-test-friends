@@ -5,7 +5,7 @@ import sinon from 'sinon';
 import UserPage from '../../../src/pages/user/page';
 import userApi from "../../../src/services/userApi";
 
-test('render with container div', t => {
+test('rendered div.container', t => {
   // const mockUserApi = sinon.stub(userApi, 'getUsers').returns({ name: "mockUserName" });
   const wrapper = shallow(React.createElement(UserPage));
   t.is(wrapper.find("div.container").length, 0);
