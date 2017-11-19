@@ -24,7 +24,14 @@ Routing has been implemented + user page fetches name. Eslint installed.
 Users page and user page firs draft ready.
 (1:30)
 
+Installed jsdom for unit tests
 https://tech.just-eat.com/2016/11/10/unit-testing-front-end-javascript-with-ava-and-jsdom/
+
+Forked a design for profile page
+https://codepen.io/ThomasDaubenton/pen/boVgjW
+
+Finished unit tests.
+
 
 
 
